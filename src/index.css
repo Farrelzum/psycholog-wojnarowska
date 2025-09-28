@@ -8,39 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 35 20% 97%;
-    --foreground: 25 15% 25%;
+    --background: 60 15% 97%;
+    --foreground: 95 15% 25%;
 
-    --card: 35 25% 95%;
-    --card-foreground: 25 15% 25%;
+    --card: 60 20% 95%;
+    --card-foreground: 95 15% 25%;
 
-    --popover: 35 25% 95%;
-    --popover-foreground: 25 15% 25%;
+    --popover: 60 20% 95%;
+    --popover-foreground: 95 15% 25%;
 
-    --primary: 25 35% 45%;
-    --primary-foreground: 35 25% 95%;
+    --primary: 95 25% 40%;
+    --primary-foreground: 60 15% 95%;
 
-    --secondary: 35 15% 85%;
-    --secondary-foreground: 25 25% 35%;
+    --secondary: 60 12% 85%;
+    --secondary-foreground: 95 20% 35%;
 
-    --muted: 35 12% 88%;
-    --muted-foreground: 25 8% 55%;
+    --muted: 60 8% 88%;
+    --muted-foreground: 95 8% 55%;
 
-    --accent: 30 25% 75%;
-    --accent-foreground: 25 25% 35%;
+    --accent: 85 20% 70%;
+    --accent-foreground: 95 20% 35%;
 
     --destructive: 0 65% 55%;
-    --destructive-foreground: 35 25% 95%;
+    --destructive-foreground: 60 15% 95%;
 
-    --border: 35 10% 85%;
-    --input: 35 15% 90%;
-    --ring: 25 35% 45%;
+    --border: 60 8% 85%;
+    --input: 60 10% 90%;
+    --ring: 95 25% 40%;
 
     /* Custom therapy website colors */
-    --warm-brown: 25 35% 45%;
-    --soft-beige: 35 20% 85%;
-    --cream: 35 25% 95%;
-    --warm-accent: 30 40% 65%;
+    --warm-brown: 95 25% 40%;
+    --soft-beige: 60 15% 85%;
+    --cream: 60 10% 95%;
+    --warm-accent: 85 30% 65%;
     
     /* Gradients */
     --gradient-warm: linear-gradient(135deg, hsl(var(--warm-brown)), hsl(var(--warm-accent)));
