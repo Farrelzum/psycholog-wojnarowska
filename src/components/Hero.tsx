@@ -23,8 +23,8 @@ const Hero = () => {
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">Jestem Basia i wiem, że pierwszy krok to często najtrudniejszy. Zapraszam Cię do miejsca, gdzie możesz być sobą, gdzie Twoje emocje są ważne, a Ty sam jesteś ekspertem od swojego życia.</p>
           
           <div className="flex justify-center md:justify-start">
-            <Button size="lg" className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300 px-12">
-              Umów spotkanie
+            <Button size="lg" className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300 px-12" asChild>
+              <a href="tel:+48790798993">Umów spotkanie</a>
             </Button>
           </div>
           
