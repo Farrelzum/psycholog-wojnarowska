@@ -20,7 +20,8 @@ const Hero = () => {
             do lepszego jutra
           </h1>
           
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">Jestem Barbara Wojnarowska. Towarzyszę osobom, które chcą lepiej zrozumieć siebie i swoje emocje. W bezpiecznej przestrzeni możesz zatrzymać się, nabrać sił i ruszyć w stronę zmian, które są dla Ciebie ważne.</p>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">Jestem Barbara Wojnarowska. Towarzyszę osobom, które chcą lepiej zrozumieć siebie i swoje emocje. W bezpiecznej przestrzeni możesz zatrzymać się, nabrać sił i ruszyć
+w stronę zmian, które są dla Ciebie ważne.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button size="lg" className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300 px-12" asChild>
