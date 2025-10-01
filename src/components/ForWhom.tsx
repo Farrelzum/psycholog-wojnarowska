@@ -2,27 +2,27 @@ const ForWhom = () => {
   const situations = [
     {
       title: "Gdy czujesz się przytłoczony",
-      description: "Życie czasami przynosi więcej wyzwań niż jesteś w stanie udźwignąć. Stres w pracy, problemy w relacjach, trudne decyzje - wszystko to może sprawić, że czujesz się zagubiony."
+      description: "Bywa, że codzienność staje się zbyt ciężka – praca, obowiązki, trudne decyzje czy relacje. Możesz wtedy czuć się zagubiony i przytłoczony. W terapii dostajesz przestrzeń, by to unieść razem."
     },
     {
       title: "Kiedy coś się w życiu zmieniło",
-      description: "Rozwód, utrata bliskiej osoby, zmiana pracy, przeprowadzka - duże zmiany, nawet pozytywne, mogą być wyzwaniem. Nie musisz radzić sobie z nimi sam."
+      description: "Zmiany – nawet te dobre – potrafią wywrócić życie do góry nogami. Rozstanie, przeprowadzka, utrata bliskiej osoby czy nowa praca mogą budzić lęk i niepewność. Nie musisz przechodzić przez to sam."
     },
     {
       title: "Gdy relacje przestają dawać radość",
-      description: "Konflikty z partnerem, trudności w komunikacji z dziećmi, poczucie samotności wśród innych ludzi - relacje to serce naszego życia i warto o nie dbać."
+      description: "Relacje są sercem naszego życia, ale czasem zamiast bliskości dają ból. Kłótnie z partnerem, poczucie samotności, trudności w porozumieniu z dziećmi – warto wtedy poszukać nowych sposobów budowania więzi."
     },
     {
       title: "Kiedy chcesz lepiej siebie poznać",
-      description: "Czasem po prostu czujesz, że chcesz więcej od życia, lepiej rozumieć swoje reakcje, odkryć swoje mocne strony czy znaleźć kierunek rozwoju."
+      description: "Możesz czuć, że chcesz czegoś więcej – lepiej rozumieć swoje emocje i reakcje, odkryć mocne strony albo znaleźć kierunek rozwoju. Terapia to bezpieczne miejsce, by przyjrzeć się sobie."
     },
     {
       title: "Gdy przeszłość wciąż boli",
-      description: "Traumatyczne doświadczenia, krzywdy z dzieciństwa, trudne wspomnienia - wszystko to może wpływać na Twoje dzisiejsze życie i zasługuje na uwagę i uzdrowienie."
+      description: "Trudne wspomnienia i rany z przeszłości często wpływają na nasze dzisiejsze życie. Wspólnie możemy się im przyjrzeć i pracować nad tym, by ból stopniowo ustępował miejsca większemu spokoju."
     },
     {
       title: "Kiedy lęk ogranicza Twoje życie",
-      description: "Ataki paniki, fobie, nadmierna troska o przyszłość - lęk to naturalna emocja, ale gdy zaczyna dominować w życiu, warto poszukać wsparcia."
+      description: "Lęk to naturalna emocja, ale czasem zaczyna przejmować kontrolę – pojawiają się napady paniki, fobie czy nieustanne zamartwianie się. W terapii możesz znaleźć sposoby, by odzyskać równowagę i poczucie wolności."
     }
   ];
 
@@ -34,8 +34,8 @@ const ForWhom = () => {
             Dla kogo?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Każdy ma prawo do wsparcia. Oto sytuacje, w których najczęściej się spotykamy - 
-            może rozpoznasz w nich coś ze swojego doświadczenia.
+            Każdy z nas ma momenty, w których potrzebuje wsparcia. Oto sytuacje, w których 
+            najczęściej towarzyszę moim pacjentom – być może odnajdziesz tu coś ze swojego doświadczenia:
           </p>
         </div>
 
@@ -60,11 +60,11 @@ const ForWhom = () => {
         <div className="mt-12 text-center">
           <div className="bg-soft-beige rounded-xl p-8 shadow-soft">
             <p className="text-lg text-primary mb-4">
-              <strong>Pamiętaj:</strong> Nie musisz być w kryzysie, żeby skorzystać z terapii.
+              💡 <strong>Pamiętaj:</strong> nie musisz być w kryzysie, żeby skorzystać z terapii.
             </p>
             <p className="text-muted-foreground">
-              Czasem po prostu chcesz mieć kogoś, kto wysłucha, zrozumie i pomoże Ci 
-              spojrzeć na życie z nowej perspektywy. To jest w porządku i bardzo cenne.
+              Czasem wystarczy, że chcesz mieć kogoś, kto wysłucha, zrozumie i pomoże spojrzeć 
+              na życie z nowej perspektywy. To jest w porządku – i bardzo cenne.
             </p>
           </div>
         </div>

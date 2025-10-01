@@ -9,8 +9,8 @@ const MyApproach = () => {
             Moje podejście
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Każdy z nas ma w sobie mądrość i siłę potrzebną do zmiany. 
-            Moją rolą jest być z Tobą w tej podróży i pomóc Ci ją odkryć.
+            Wierzę, że każdy człowiek ma w sobie potencjał do rozwoju i zmiany.
+            Moim zadaniem jako psychologa jest towarzyszyć Ci w tej drodze, wspierać i pomóc odnaleźć Twoje własne zasoby.
           </p>
         </div>
 
@@ -24,9 +24,8 @@ const MyApproach = () => {
                 Relacja to podstawa
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Wierzę, że terapia to przede wszystkim relacja między dwójką ludzi. 
-                Tworzę przestrzeń, w której możesz czuć się bezpiecznie i zrozumiane, 
-                bez oceniania czy presji na szybkie zmiany.
+                Podstawą skutecznej terapii jest relacja oparta na zaufaniu i wzajemnym zrozumieniu. 
+                Tworzę przestrzeń, w której możesz poczuć się bezpiecznie i swobodnie – bez oceniania i presji.
               </p>
             </CardContent>
           </Card>
@@ -40,9 +39,8 @@ const MyApproach = () => {
                 Twoje tempo, Twoja droga
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Nie ma jednego uniwersalnego sposobu na radzenie sobie z trudnościami. 
-                Razem odkryjemy to, co działa właśnie dla Ciebie, szanując Twoje 
-                doświadczenia i tempo zmian.
+                Każdy z nas ma swoje tempo i własną drogę. Wspólnie będziemy odkrywać, 
+                co działa właśnie dla Ciebie, szanując Twoje doświadczenia i gotowość do zmiany.
               </p>
             </CardContent>
           </Card>
@@ -56,9 +54,8 @@ const MyApproach = () => {
                 Praktyczne narzędzia
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Łączę rozmowy terapeutyczne z konkretnymi technikami, które możesz 
-                wykorzystać w codziennym życiu. Każde narzędzie dopasowuję do Twojej 
-                sytuacji i potrzeb.
+                Podczas spotkań korzystam zarówno z rozmowy, jak i sprawdzonych metod terapeutycznych. 
+                Otrzymasz konkretne narzędzia, które możesz wykorzystać w codziennych sytuacjach.
               </p>
             </CardContent>
           </Card>
@@ -72,9 +69,8 @@ const MyApproach = () => {
                 Całościowe spojrzenie
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Patrzę na człowieka jako całość - Twoje emocje, ciało, myśli i relacje 
-                są równie ważne. Razem odkrywamy, jak te wszystkie elementy wpływają 
-                na Twoje samopoczucie.
+                Traktuję człowieka całościowo – ważne są Twoje emocje, ciało, myśli i relacje. 
+                Razem będziemy szukać równowagi między tymi obszarami, by poprawić Twoje samopoczucie.
               </p>
             </CardContent>
           </Card>
