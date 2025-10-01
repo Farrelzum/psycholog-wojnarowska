@@ -22,8 +22,8 @@ const Hero = () => {
           
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">Jestem Basia i wiem, że pierwszy krok to często najtrudniejszy. Zapraszam Cię do miejsca, gdzie możesz być sobą, gdzie Twoje emocje są ważne, a Ty sam jesteś ekspertem od swojego życia.</p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Button size="lg" className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300">
+          <div className="flex justify-center md:justify-start">
+            <Button size="lg" className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300 px-12">
               Umów spotkanie
             </Button>
           </div>
