@@ -22,9 +22,12 @@ const Hero = () => {
           
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">Jestem Basia i wiem, że pierwszy krok to często najtrudniejszy. Zapraszam Cię do miejsca, gdzie możesz być sobą, gdzie Twoje emocje są ważne, a Ty sam jesteś ekspertem od swojego życia.</p>
           
-          <div className="flex justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button size="lg" className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300 px-12" asChild>
               <a href="tel:+48790798993">Umów spotkanie</a>
+            </Button>
+            <Button size="lg" variant="outline" className="border-warm-brown text-warm-brown hover:bg-warm-accent/10 px-12" asChild>
+              <a href="#o-mnie">Dowiedz się więcej</a>
             </Button>
           </div>
           
