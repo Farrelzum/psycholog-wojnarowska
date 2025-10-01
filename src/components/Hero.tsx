@@ -26,9 +26,6 @@ const Hero = () => {
             <Button size="lg" className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300">
               Umów spotkanie
             </Button>
-            <Button variant="outline" size="lg" className="border-warm-brown text-warm-brown hover:bg-soft-beige">
-              Dowiedz się więcej
-            </Button>
           </div>
           
           <div className="mt-8 text-sm text-muted-foreground">
