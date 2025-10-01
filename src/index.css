@@ -8,13 +8,13 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 60 15% 97%;
+    --background: 45 20% 97%;
     --foreground: 95 15% 25%;
 
-    --card: 60 20% 95%;
+    --card: 45 18% 96%;
     --card-foreground: 95 15% 25%;
 
-    --popover: 60 20% 95%;
+    --popover: 45 18% 96%;
     --popover-foreground: 95 15% 25%;
 
     --primary: 146 50% 36%;
@@ -38,13 +38,14 @@ All colors MUST be HSL.
 
     /* Custom therapy website colors */
     --warm-brown: 146 50% 36%;
-    --soft-beige: 60 15% 85%;
-    --cream: 60 10% 95%;
+    --soft-beige: 45 18% 88%;
+    --cream: 45 20% 96%;
     --warm-accent: 146 40% 60%;
+    --pearl: 40 25% 98%;
     
     /* Gradients */
     --gradient-warm: linear-gradient(135deg, hsl(var(--warm-brown)), hsl(var(--warm-accent)));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--cream)), hsl(var(--background)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--pearl)), hsl(var(--cream)));
     
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(var(--warm-brown) / 0.15);
