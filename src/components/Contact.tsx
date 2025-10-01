@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-
 const Contact = () => {
-  return (
-    <section className="py-20 px-6 bg-background">
+  return <section className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
@@ -40,7 +38,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-primary">Telefon</p>
-                    <p className="text-muted-foreground">+48 123 456 789</p>
+                    <p className="text-muted-foreground">+48 790 798 993</p>
                   </div>
                 </div>
 
@@ -126,8 +124,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
