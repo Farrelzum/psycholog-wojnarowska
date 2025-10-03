@@ -17,30 +17,30 @@ All colors MUST be HSL.
     --popover: 45 18% 96%;
     --popover-foreground: 95 15% 25%;
 
-    --primary: 146 50% 36%;
+    --primary: 174 72% 46%;
     --primary-foreground: 60 15% 95%;
 
     --secondary: 60 12% 85%;
-    --secondary-foreground: 146 40% 30%;
+    --secondary-foreground: 174 72% 36%;
 
     --muted: 60 8% 88%;
-    --muted-foreground: 146 20% 45%;
+    --muted-foreground: 174 40% 45%;
 
-    --accent: 146 35% 65%;
-    --accent-foreground: 146 40% 25%;
+    --accent: 174 60% 56%;
+    --accent-foreground: 174 72% 25%;
 
     --destructive: 0 65% 55%;
     --destructive-foreground: 60 15% 95%;
 
     --border: 60 8% 85%;
     --input: 60 10% 90%;
-    --ring: 146 50% 36%;
+    --ring: 174 72% 46%;
 
     /* Custom therapy website colors */
-    --warm-brown: 146 50% 36%;
+    --warm-brown: 174 72% 46%;
     --soft-beige: 45 18% 88%;
     --cream: 45 20% 96%;
-    --warm-accent: 146 40% 60%;
+    --warm-accent: 174 60% 56%;
     --pearl: 40 25% 98%;
     
     /* Gradients */
