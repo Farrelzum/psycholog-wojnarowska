@@ -111,18 +111,6 @@ const Contact = () => {
           </Card>
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="bg-soft-beige rounded-xl p-8 shadow-soft">
-            <p className="text-primary mb-4 font-medium">
-              Często zadawane pytanie:
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              <strong>"Co mam napisać w pierwszej wiadomości?"</strong><br />
-              Naprawdę nie musisz się nad tym zastanawiać. Wystarczy, że napiszesz 
-              kilka słów o tym, co Cię do mnie sprowadziło. Nie ma złych ani dobrych odpowiedzi.
-            </p>
-          </div>
-        </div>
       </div>
     </section>;
 };
