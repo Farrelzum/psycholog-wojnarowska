@@ -104,8 +104,8 @@ const Contact = () => {
                 </div>
               </div>
 
-              <Button className="w-full mt-6 bg-warm shadow-soft hover:shadow-warm transition-all duration-300">
-                Umów bezpłatną konsultację
+              <Button className="w-full mt-6 bg-warm shadow-soft hover:shadow-warm transition-all duration-300" asChild>
+                <a href="tel:+48790798993">Umów bezpłatną konsultację</a>
               </Button>
             </CardContent>
           </Card>
