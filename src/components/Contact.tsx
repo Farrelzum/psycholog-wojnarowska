@@ -32,7 +32,12 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Krzemienna+42b+70-734+Szczecin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 hover:opacity-80 transition-opacity cursor-pointer"
+                >
                   <div className="w-10 h-10 bg-warm-accent rounded-full flex items-center justify-center">
                     <span className="text-white">📍</span>
                   </div>
@@ -43,7 +48,7 @@ const Contact = () => {
                       70-734 Szczecin
                     </p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-soft-beige rounded-full flex items-center justify-center">
