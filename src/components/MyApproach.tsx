@@ -1,13 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
-
 const MyApproach = () => {
-  return (
-    <section className="py-20 px-6 bg-cream">
+  return <section className="py-20 px-6 bg-cream">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
-            Moje podejście
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">Kim jestem?</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Wierzę, że każdy człowiek ma w sobie potencjał do rozwoju i zmiany.
             Moim zadaniem jako psychologa jest towarzyszyć Ci w tej drodze, wspierać i pomóc odnaleźć Twoje własne zasoby.
@@ -76,8 +72,6 @@ const MyApproach = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MyApproach;
