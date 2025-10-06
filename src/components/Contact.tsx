@@ -39,8 +39,8 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-primary">Gabinet</p>
                     <p className="text-muted-foreground">
-                      ul. Spokójna 15/3<br />
-                      00-001 Warszawa
+                      Krzemienna 42b<br />
+                      70-734 Szczecin
                     </p>
                   </div>
                 </div>
