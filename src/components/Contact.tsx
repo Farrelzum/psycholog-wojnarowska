@@ -52,8 +52,8 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-primary">Godziny przyjęć</p>
                     <p className="text-muted-foreground">
-                      Pon - Pt: 9:00 - 19:00<br />
-                      Sob: 10:00 - 15:00
+                      Wt-Pt: 15:00-20:00<br />
+                      Sob: 15:00-20:00
                     </p>
                   </div>
                 </div>
