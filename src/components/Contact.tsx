@@ -33,7 +33,7 @@ const Contact = () => {
                 </div>
 
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Krzemienna+42b+70-734+Szczecin"
+                  href="https://www.google.com/maps/search/?api=1&query=Krzemienna+42B+70-734+Szczecin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 hover:opacity-80 transition-opacity cursor-pointer"
@@ -44,7 +44,7 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-primary">Gabinet</p>
                     <p className="text-muted-foreground">
-                      Krzemienna 42b<br />
+                      Krzemienna 42B<br />
                       70-734 Szczecin
                     </p>
                   </div>
