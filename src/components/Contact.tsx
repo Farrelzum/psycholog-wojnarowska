@@ -3,17 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const Contact = () => {
   return <section className="py-20 px-6 bg-background">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
-            Zrób pierwszy krok
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Wiem, że napisanie pierwszej wiadomości może być trudne. 
-            Nie martw się o to, co napisać - po prostu powiedz, co Cię do mnie sprowadziło.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
           <Card className="shadow-soft border-none bg-cream">
             <CardContent className="p-8">
