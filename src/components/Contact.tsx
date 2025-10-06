@@ -33,7 +33,7 @@ const Contact = () => {
                 </div>
 
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Krzemienna+42B+70-734+Szczecin"
+                  href="https://www.google.com/maps/place/Krzemienna+42B,+70-734+Szczecin/@53.3639803,14.5935556,17z/data=!3m1!4b1!4m6!3m5!1s0x47aa0800aca22b19:0x58c7f28749af78f8!8m2!3d53.3639771!4d14.5961305!16s%2Fg%2F11c5m4gv9m?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 hover:opacity-80 transition-opacity cursor-pointer"
