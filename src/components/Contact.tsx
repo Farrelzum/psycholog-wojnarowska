@@ -49,8 +49,8 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-primary">Gabinet</p>
                     <p className="text-muted-foreground">
-                      Krzemienna 42b<br />
-                      70-734 Szczecin
+                      ul. Spokójna 15/3<br />
+                      00-001 Warszawa
                     </p>
                   </div>
                 </div>
@@ -62,8 +62,8 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-primary">Godziny przyjęć</p>
                     <p className="text-muted-foreground">
-                      Wt-Pt: 15:00-20:00<br />
-                      Sob: 15:00-20:00
+                      Pon - Pt: 9:00 - 19:00<br />
+                      Sob: 10:00 - 15:00
                     </p>
                   </div>
                 </div>
@@ -81,10 +81,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="bg-background rounded-lg p-6">
                   <h4 className="font-semibold text-primary mb-3">💫 Bezpłatna konsultacja</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Pierwsze 30-minutowe spotkanie jest bezpłatne. To czas, w którym 
-                    możemy się poznać i sprawdzić, czy czujesz się ze mną komfortowo.
-                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Pierwsza 15-minutowa rozmowa telefoniczna jest bezpłatna. To czas, w którym możemy się poznać i sprawdzić, czy czujesz się ze mną komfortowo.</p>
                 </div>
 
                 <div className="bg-background rounded-lg p-6">
