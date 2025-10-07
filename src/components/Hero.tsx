@@ -27,7 +27,7 @@ const Hero = () => {
               <a href="tel:+48790798993">Umów spotkanie</a>
             </Button>
             <Button size="lg" variant="outline" className="border-warm-brown text-warm-brown hover:bg-warm-accent/10 px-12" asChild>
-              <a href="#o-mnie">Dowiedz się więcej</a>
+              <a href="#kwalifikacje">Dowiedz się więcej</a>
             </Button>
           </div>
           
