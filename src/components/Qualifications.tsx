@@ -34,8 +34,7 @@ const Qualifications = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-3">Doświadczenie zawodowe</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Mam doświadczenie w pracy indywidualnej i grupowej, prowadzę także terapie par i rodzin. 
-                    Łączę różne podejścia – TSR, ACT oraz psychodynamiczne – aby jak najlepiej odpowiadać na potrzeby moich klientów.
+                    Ukończyłam psychologię na Uniwersytecie SWPS o{'\u00A0'}specjalności psychologia kliniczna dzieci i{'\u00A0'}młodzieży oraz edukację elementarną z{'\u00A0'}diagnozą i{'\u00A0'}terapią pedagogiczną. Jestem mediatorem i{'\u00A0'}psychoterapeutką w{'\u00A0'}trakcie szkolenia w{'\u00A0'}nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR). Należę do Polskiego Towarzystwa Terapii Skoncentrowanej na Rozwiązaniach, które zrzesza terapeutów pracujących w{'\u00A0'}podejściu opartym na zasobach i{'\u00A0'}współpracy. Obecnie poszerzam swoją wiedzę z{'\u00A0'}zakresu integracji sensorycznej, aby skuteczniej wspierać dzieci w{'\u00A0'}rozwoju emocjonalnym, poznawczym i{'\u00A0'}społecznym. W{'\u00A0'}pracy łączę podejście psychologiczne, pedagogiczne i{'\u00A0'}terapeutyczne, dostosowując metody do indywidualnych potrzeb każdej osoby.
                   </p>
                 </div>
 
