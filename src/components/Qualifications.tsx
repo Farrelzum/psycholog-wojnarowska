@@ -23,8 +23,7 @@ const Qualifications = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">O mnie</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Jestem psychologiem i mediatorem, specjalizuję się w pracy z dziećmi, młodzieżą i dorosłymi. 
-            Na co dzień pracuję w Poradni Psychologiczno-Pedagogicznej, gdzie wspieram rozwój, diagnozuję i prowadzę terapię psychologiczną.
+            Ukończyłam psychologię na Uniwersytecie SWPS o specjalności psychologia kliniczna dzieci i młodzieży oraz edukację elementarną z diagnozą i terapią pedagogiczną. Jestem mediatorem i psychoterapeutką w trakcie szkolenia w nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR). Należę do Polskiego Towarzystwa Terapii Skoncentrowanej na Rozwiązaniach, które zrzesza terapeutów pracujących w podejściu opartym na zasobach i współpracy. Obecnie poszerzam swoją wiedzę z zakresu integracji sensorycznej, aby skuteczniej wspierać dzieci w rozwoju emocjonalnym, poznawczym i społecznym. W pracy łączę podejście psychologiczne, pedagogiczne i terapeutyczne, dostosowując metody do indywidualnych potrzeb każdej osoby.
           </p>
         </div>
 
