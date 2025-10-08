@@ -40,10 +40,8 @@ const Qualifications = () => {
 
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-3">Kwalifikacje i szkolenia</h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Posiadam kwalifikacje trenera Treningu Umiejętności Społecznych (TUS) oraz ukończone kursy w nurcie 
-                    Terapii Skoncentrowanej na Rozwiązaniach (podstawowy i zaawansowany). Wcześniej zdobywałam doświadczenie 
-                    w Ośrodku Szkolenia i Wychowania, wspierając młodzież w trudnych sytuacjach życiowych.
+                  <p className="text-muted-foreground leading-relaxed text-justify">
+                    Posiadam kwalifikacje trenera Treningu Umiejętności Społecznych (TUS) oraz ukończone kursy w{'\u00A0'}nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR) – na poziomie podstawowym i{'\u00A0'}zaawansowanym. Jestem członkiem Polskiego Towarzystwa Terapii Skoncentrowanej na Rozwiązaniach, regularnie uczestniczę w{'\u00A0'}superwizjach i{'\u00A0'}szkoleniach rozwijających warsztat terapeutyczny.
                   </p>
                 </div>
               </div>
