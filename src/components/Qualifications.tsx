@@ -1,37 +1,27 @@
 import { GraduationCap, Users, Heart, Lightbulb } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
 const Qualifications = () => {
-  const highlights = [
-    {
-      icon: GraduationCap,
-      title: "Wykształcenie i specjalizacje",
-      description: "Psycholog i mediator z kwalifikacjami trenera TUS oraz ukończonymi kursami TSR (podstawowy i zaawansowany)"
-    },
-    {
-      icon: Users,
-      title: "Różnorodne doświadczenie",
-      description: "Praca indywidualna i grupowa, terapia par i rodzin w Poradni Psychologiczno-Pedagogicznej"
-    },
-    {
-      icon: Heart,
-      title: "Wsparcie dla dorosłych",
-      description: "Pomoc w radzeniu sobie z lękiem, depresją, żałobą i zaburzeniami obsesyjno-kompulsywnymi"
-    },
-    {
-      icon: Lightbulb,
-      title: "Pomoc dzieciom i młodzieży",
-      description: "ADHD, zaburzenia adaptacyjne, opozycyjno-buntownicze i problemy emocjonalne"
-    }
-  ];
-
-  return (
-    <section id="kwalifikacje" className="py-20 px-6 bg-background">
+  const highlights = [{
+    icon: GraduationCap,
+    title: "Wykształcenie i specjalizacje",
+    description: "Psycholog i mediator z kwalifikacjami trenera TUS oraz ukończonymi kursami TSR (podstawowy i zaawansowany)"
+  }, {
+    icon: Users,
+    title: "Różnorodne doświadczenie",
+    description: "Praca indywidualna i grupowa, terapia par i rodzin w Poradni Psychologiczno-Pedagogicznej"
+  }, {
+    icon: Heart,
+    title: "Wsparcie dla dorosłych",
+    description: "Pomoc w radzeniu sobie z lękiem, depresją, żałobą i zaburzeniami obsesyjno-kompulsywnymi"
+  }, {
+    icon: Lightbulb,
+    title: "Pomoc dzieciom i młodzieży",
+    description: "ADHD, zaburzenia adaptacyjne, opozycyjno-buntownicze i problemy emocjonalne"
+  }];
+  return <section id="kwalifikacje" className="py-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
-            Moje kwalifikacje
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">O mnie</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Jestem psychologiem i mediatorem, specjalizuję się w pracy z dziećmi, młodzieżą i dorosłymi. 
             Na co dzień pracuję w Poradni Psychologiczno-Pedagogicznej, gdzie wspieram rozwój, diagnozuję i prowadzę terapię psychologiczną.
@@ -65,12 +55,8 @@ const Qualifications = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
           {highlights.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <Card 
-                key={index} 
-                className="border-none shadow-soft bg-card hover:shadow-warm transition-all duration-300"
-              >
+          const Icon = item.icon;
+          return <Card key={index} className="border-none shadow-soft bg-card hover:shadow-warm transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-warm-accent/10 flex items-center justify-center">
@@ -86,13 +72,10 @@ const Qualifications = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Qualifications;
