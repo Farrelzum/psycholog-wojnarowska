@@ -1,5 +1,23 @@
+import { GraduationCap, Users, Heart, Lightbulb } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 const Qualifications = () => {
+  const highlights = [{
+    icon: GraduationCap,
+    title: "Wykształcenie i specjalizacje",
+    description: "Psycholog i mediator z kwalifikacjami trenera TUS oraz ukończonymi kursami TSR (podstawowy i zaawansowany)"
+  }, {
+    icon: Users,
+    title: "Różnorodne doświadczenie",
+    description: "Praca indywidualna i grupowa, terapia par i rodzin w Poradni Psychologiczno-Pedagogicznej"
+  }, {
+    icon: Heart,
+    title: "Wsparcie dla dorosłych",
+    description: "Pomoc w radzeniu sobie z lękiem, depresją, żałobą i zaburzeniami obsesyjno-kompulsywnymi"
+  }, {
+    icon: Lightbulb,
+    title: "Pomoc dzieciom i młodzieży",
+    description: "ADHD, zaburzenia adaptacyjne, opozycyjno-buntownicze i problemy emocjonalne"
+  }];
   return <section id="kwalifikacje" className="py-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -31,6 +49,28 @@ const Qualifications = () => {
           </Card>
         </div>
 
+        <div className="grid md:grid-cols-2 gap-6">
+          {highlights.map((item, index) => {
+          const Icon = item.icon;
+          return <Card key={index} className="border-none shadow-soft bg-card hover:shadow-warm transition-all duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-warm-accent/10 flex items-center justify-center">
+                      <Icon className="w-6 h-6 text-warm-accent" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-primary mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>;
+        })}
+        </div>
       </div>
     </section>;
 };
