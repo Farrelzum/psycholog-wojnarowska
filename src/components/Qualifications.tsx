@@ -1,11 +1,7 @@
-import { GraduationCap, Users, Heart, Lightbulb } from "lucide-react";
+import { Users, Heart, Lightbulb } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 const Qualifications = () => {
   const highlights = [{
-    icon: GraduationCap,
-    title: "Wykształcenie i specjalizacje",
-    description: "Psycholog i mediator z kwalifikacjami trenera TUS oraz ukończonymi kursami TSR (podstawowy i zaawansowany)"
-  }, {
     icon: Users,
     title: "Różnorodne doświadczenie",
     description: "Praca indywidualna i grupowa, terapia par i rodzin w Poradni Psychologiczno-Pedagogicznej"
