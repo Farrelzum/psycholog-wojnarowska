@@ -42,10 +42,13 @@ All colors MUST be HSL.
     --cream: 45 20% 96%;
     --warm-accent: 146 40% 60%;
     --pearl: 40 25% 98%;
+    --gold: 45 75% 55%;
+    --gold-light: 43 85% 70%;
     
     /* Gradients */
     --gradient-warm: linear-gradient(135deg, hsl(var(--warm-brown)), hsl(var(--warm-accent)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--pearl)), hsl(var(--cream)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
     
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(var(--warm-brown) / 0.15);
@@ -155,5 +158,17 @@ All colors MUST be HSL.
   
   .bg-cream {
     background-color: hsl(var(--cream));
+  }
+  
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+  
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+  
+  .gradient-gold {
+    background: var(--gradient-gold);
   }
 }

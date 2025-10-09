@@ -51,6 +51,8 @@ export default {
         "soft-beige": "hsl(var(--soft-beige))",
         "cream": "hsl(var(--cream))",
         "warm-accent": "hsl(var(--warm-accent))",
+        "gold": "hsl(var(--gold))",
+        "gold-light": "hsl(var(--gold-light))",
       },
       borderRadius: {
         lg: "var(--radius)",
