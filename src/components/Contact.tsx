@@ -12,7 +12,7 @@ const Contact = () => {
               </h3>
               
               <div className="space-y-6">
-                <div className="flex items-center gap-4">
+                <a href="mailto:psycholog.wojnarowska@gmail.com" className="flex items-center gap-4 cursor-pointer">
                   <div className="w-10 h-10 bg-warm-accent rounded-full flex items-center justify-center">
                     <span className="text-white">📧</span>
                   </div>
@@ -20,9 +20,9 @@ const Contact = () => {
                     <p className="font-medium text-primary">Email</p>
                     <p className="text-muted-foreground">psycholog.wojnarowska@gmail.com</p>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex items-center gap-4">
+                <a href="tel:+48790798993" className="flex items-center gap-4 cursor-pointer">
                   <div className="w-10 h-10 bg-soft-beige rounded-full flex items-center justify-center">
                     <span className="text-primary">📱</span>
                   </div>
@@ -30,9 +30,14 @@ const Contact = () => {
                     <p className="font-medium text-primary">Telefon</p>
                     <p className="text-muted-foreground">+48 790 798 993</p>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex items-center gap-4">
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Krzemienna+42B,+70-734+Szczecin" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 cursor-pointer"
+                >
                   <div className="w-10 h-10 bg-warm-accent rounded-full flex items-center justify-center">
                     <span className="text-white">📍</span>
                   </div>
@@ -43,7 +48,7 @@ const Contact = () => {
                       70-734 Szczecin
                     </p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-soft-beige rounded-full flex items-center justify-center">
