@@ -22,7 +22,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-20 px-6 bg-cream">
+    <section className="py-20 px-6 bg-gradient-to-b from-background to-soft-beige">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
@@ -33,27 +33,29 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="flex justify-center">
-          <a 
-            id="zl-url" 
-            className="zl-url" 
-            href="https://www.znanylekarz.pl/barbara-wojnarowska/psycholog/szczecin" 
-            rel="nofollow" 
-            data-zlw-doctor="barbara-wojnarowska" 
-            data-zlw-type="big" 
-            data-zlw-opinion="true" 
-            data-zlw-hide-branding="true" 
-            data-zlw-saas-only="true" 
-            data-zlw-a11y-title="Widget umówienia wizyty lekarskiej"
-          >
-            Barbara Wojnarowska - ZnanyLekarz.pl
-          </a>
+        <div className="flex justify-center mb-12">
+          <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-border/50 max-w-4xl w-full">
+            <a 
+              id="zl-url" 
+              className="zl-url block" 
+              href="https://www.znanylekarz.pl/barbara-wojnarowska/psycholog/szczecin" 
+              rel="nofollow" 
+              data-zlw-doctor="barbara-wojnarowska" 
+              data-zlw-type="big" 
+              data-zlw-opinion="true" 
+              data-zlw-hide-branding="true" 
+              data-zlw-saas-only="true" 
+              data-zlw-a11y-title="Widget umówienia wizyty lekarskiej"
+            >
+              Barbara Wojnarowska - ZnanyLekarz.pl
+            </a>
+          </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="bg-background rounded-xl p-8 shadow-soft max-w-2xl mx-auto">
-            <p className="text-sm text-muted-foreground mb-4">
-              <strong>Prywatność i dyskrecja</strong>
+        <div className="text-center">
+          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-gold/20 max-w-2xl mx-auto">
+            <p className="text-sm font-medium text-foreground mb-4">
+              Prywatność i dyskrecja
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Wszystkie opinie zostały udostępnione przez pacjentów. 
