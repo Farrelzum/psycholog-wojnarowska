@@ -33,7 +33,7 @@ const Contact = () => {
                 </a>
 
                 <a 
-                  href="https://www.google.com/maps?q=53.4289,14.5530" 
+                  href="https://maps.google.com/?q=53.4289,14.5530" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 cursor-pointer"
