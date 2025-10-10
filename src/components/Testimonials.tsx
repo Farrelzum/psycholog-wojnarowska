@@ -41,8 +41,8 @@ const Testimonials = () => {
             <div className="relative bg-white rounded-2xl overflow-hidden shadow-warm border-2 border-gold">
               <a 
                 id="zl-url" 
-                className="zl-url block" 
-                href="https://www.znanylekarz.pl/barbara-wojnarowska/psycholog/szczecin" 
+                className="zl-url block -m-px" 
+                href="https://www.znanylekarz.pl/barbara-wojnarowska/psycholog/szczecin"
                 rel="nofollow" 
                 data-zlw-doctor="barbara-wojnarowska" 
                 data-zlw-type="big" 
