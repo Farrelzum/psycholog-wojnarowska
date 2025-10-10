@@ -46,7 +46,7 @@ const Qualifications = () => {
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
             O mnie
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">
             Ukończyłam psychologię na Uniwersytecie SWPS o{'\u00A0'}specjalności psychologia kliniczna dzieci i{'\u00A0'}młodzieży oraz edukację elementarną z{'\u00A0'}diagnozą i{'\u00A0'}terapią pedagogiczną. W{'\u00A0'}pracy łączę podejście psychologiczne, pedagogiczne i{'\u00A0'}terapeutyczne.
           </p>
         </div>
