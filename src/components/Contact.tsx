@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 const Contact = () => {
   return <section className="py-12 md:py-20 px-4 md:px-6 bg-background">
       <div className="max-w-4xl mx-auto">
@@ -62,6 +63,52 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+
+              {/* Cennik */}
+              <div className="mt-8 pt-8 border-t border-muted">
+                <h4 className="font-semibold text-primary mb-4">Cennik</h4>
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="w-[50%]">Usługa</TableHead>
+                      <TableHead>Czas trwania</TableHead>
+                      <TableHead className="text-right">Cena</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell className="font-medium text-sm">Konsultacja psychologiczna (dziecko, młodzież, dorosły)</TableCell>
+                      <TableCell className="text-sm">50 min</TableCell>
+                      <TableCell className="text-right text-sm">200 zł</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-medium text-sm">Sesja terapeutyczna indywidualna (TSR, ACT, psychodynamiczna)</TableCell>
+                      <TableCell className="text-sm">50 min</TableCell>
+                      <TableCell className="text-right text-sm">200 zł</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-medium text-sm">Konsultacja rodzicielska / wychowawcza</TableCell>
+                      <TableCell className="text-sm">50–60 min</TableCell>
+                      <TableCell className="text-right text-sm">200 zł</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-medium text-sm">Terapia par / mediacja</TableCell>
+                      <TableCell className="text-sm">60 min</TableCell>
+                      <TableCell className="text-right text-sm">250 zł</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-medium text-sm">Wydanie opinii psychologicznej (na życzenie klienta)</TableCell>
+                      <TableCell className="text-sm">—</TableCell>
+                      <TableCell className="text-right text-sm">od 250 zł</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-medium text-sm">Wydanie zaświadczenia</TableCell>
+                      <TableCell className="text-sm">—</TableCell>
+                      <TableCell className="text-right text-sm">50 zł</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
               </div>
             </CardContent>
           </Card>
