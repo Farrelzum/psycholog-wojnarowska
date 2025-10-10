@@ -33,7 +33,7 @@ const ForWhom = () => {
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
             Dla kogo?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
             Każdy z nas ma momenty, w których potrzebuje wsparcia. Oto sytuacje, w których 
             najczęściej towarzyszę moim pacjentom – być może odnajdziesz tu coś ze swojego doświadczenia:
           </p>
