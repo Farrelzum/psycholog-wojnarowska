@@ -67,8 +67,8 @@ const Contact = () => {
               </div>
 
               {/* Cennik Modal */}
-              <div className="mt-auto pt-8 border-t border-muted">
-                <div className="space-y-3 mb-4">
+              <div className="mt-auto pt-8 border-t border-muted" style={{ marginTop: '2rem' }}>
+                <div className="space-y-2 mb-4">
                   <div className="bg-background rounded-lg p-4">
                     <p className="text-muted-foreground text-sm leading-relaxed">📍 Spotkania odbywają się w gabinecie stacjonarnym oraz online.</p>
                   </div>
