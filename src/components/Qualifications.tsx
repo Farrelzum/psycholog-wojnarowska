@@ -2,53 +2,35 @@ import { GraduationCap, Award, Users, BookOpen, Target, Sparkles } from "lucide-
 import { Card, CardContent } from "@/components/ui/card";
 
 // Kluczowe informacje o wykształceniu
-const educationHighlights = [
-  "Psychologia kliniczna dzieci i młodzieży - Uniwersytet SWPS",
-  "Edukacja elementarna z diagnozą i terapią pedagogiczną",
-  "Mediator sądowy",
-  "Psychoterapeutka w trakcie szkolenia (TSR)"
-];
+const educationHighlights = ["Psychologia kliniczna dzieci i młodzieży - Uniwersytet SWPS", "Edukacja elementarna z diagnozą i terapią pedagogiczną", "Mediator sądowy", "Psychoterapeutka w trakcie szkolenia (TSR)"];
 
 // Kluczowe kwalifikacje zawodowe
-const qualificationsList = [
-  "Trener Treningu Umiejętności Społecznych (TUS)",
-  "Terapia Skoncentrowana na Rozwiązaniach - poziom podstawowy",
-  "Terapia Skoncentrowana na Rozwiązaniach - poziom zaawansowany",
-  "Członek Polskiego Towarzystwa TSR",
-  "Szkolenie z integracji sensorycznej"
-];
+const qualificationsList = ["Trener Treningu Umiejętności Społecznych (TUS)", "Terapia Skoncentrowana na Rozwiązaniach - poziom podstawowy", "Terapia Skoncentrowana na Rozwiązaniach - poziom zaawansowany", "Członek Polskiego Towarzystwa TSR", "Szkolenie z integracji sensorycznej"];
 
 // Obszary specjalizacji
-const specializations = [
-  {
-    icon: Users,
-    title: "Różnorodne doświadczenie",
-    description: "Praca indywidualna i grupowa, terapia par i rodzin"
-  },
-  {
-    icon: Target,
-    title: "Wsparcie dla dorosłych",
-    description: "Lęk, depresja, żałoba, zaburzenia obsesyjno-kompulsywne"
-  },
-  {
-    icon: Sparkles,
-    title: "Pomoc dzieciom i młodzieży",
-    description: "ADHD, zaburzenia adaptacyjne, opozycyjno-buntownicze"
-  }
-];
-
+const specializations = [{
+  icon: Users,
+  title: "Różnorodne doświadczenie",
+  description: "Praca indywidualna i grupowa, terapia par i rodzin"
+}, {
+  icon: Target,
+  title: "Wsparcie dla dorosłych",
+  description: "Lęk, depresja, żałoba, zaburzenia obsesyjno-kompulsywne"
+}, {
+  icon: Sparkles,
+  title: "Pomoc dzieciom i młodzieży",
+  description: "ADHD, zaburzenia adaptacyjne, opozycyjno-buntownicze"
+}];
 const Qualifications = () => {
-  return (
-    <section id="kwalifikacje" className="py-12 md:py-20 px-4 md:px-6 bg-background">
+  return <section id="kwalifikacje" className="py-12 md:py-20 px-4 md:px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Nagłówek sekcji */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
             O mnie
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">
-            Jestem psychologiem, mediatorem i trenerem Treningu Umiejętności Społecznych (TUS). W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR), wspierając dzieci, młodzież i dorosłych w odkrywaniu swoich mocnych stron oraz wprowadzaniu zmian, które prowadzą do większego spokoju i satysfakcji w życiu.
-          </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">Jestem psychologiem, mediatorem i trenerem Treningu Umiejętności Społecznych (TUS).
+W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR), wspierając dzieci, młodzież i dorosłych w odkrywaniu swoich mocnych stron oraz wprowadzaniu zmian, które prowadzą do większego spokoju i satysfakcji w życiu.</p>
         </div>
 
         {/* Główna karta z złotą ramką */}
@@ -70,14 +52,12 @@ const Qualifications = () => {
                     </h3>
                   </div>
                   <ul className="space-y-3">
-                    {educationHighlights.map((item, index) => (
-                      <li key={index} className="flex items-start gap-2">
+                    {educationHighlights.map((item, index) => <li key={index} className="flex items-start gap-2">
                         <span className="text-gold mt-1">•</span>
                         <span className="text-muted-foreground leading-relaxed">
                           {item}
                         </span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </div>
 
@@ -92,14 +72,12 @@ const Qualifications = () => {
                     </h3>
                   </div>
                   <ul className="space-y-3">
-                    {qualificationsList.map((item, index) => (
-                      <li key={index} className="flex items-start gap-2">
+                    {qualificationsList.map((item, index) => <li key={index} className="flex items-start gap-2">
                         <span className="text-gold mt-1">•</span>
                         <span className="text-muted-foreground leading-relaxed">
                           {item}
                         </span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                 </div>
               </div>
@@ -120,12 +98,8 @@ const Qualifications = () => {
         {/* Obszary specjalizacji */}
         <div className="grid md:grid-cols-3 gap-6">
           {specializations.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <Card 
-                key={index} 
-                className="border-none shadow-soft bg-card hover:shadow-warm transition-all duration-300 hover:-translate-y-1"
-              >
+          const Icon = item.icon;
+          return <Card key={index} className="border-none shadow-soft bg-card hover:shadow-warm transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="p-6">
                   <div className="flex flex-col items-center gap-4">
                     <div className="w-14 h-14 rounded-full bg-warm-accent/10 flex items-center justify-center">
@@ -141,13 +115,10 @@ const Qualifications = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Qualifications;
