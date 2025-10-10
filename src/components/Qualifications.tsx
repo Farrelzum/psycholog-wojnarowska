@@ -103,11 +103,11 @@ W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skonce
                     <div className="w-14 h-14 rounded-full bg-warm-accent/10 flex items-center justify-center">
                       <Icon className="w-7 h-7 text-warm-accent" />
                     </div>
-                    <div className="text-center">
-                      <h3 className="text-lg font-semibold text-primary mb-2">
+                    <div>
+                      <h3 className="text-lg font-semibold text-primary mb-2 text-left">
                         {item.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed text-sm text-center">
+                      <p className="text-muted-foreground leading-relaxed text-sm text-left">
                         {item.description}
                       </p>
                     </div>
