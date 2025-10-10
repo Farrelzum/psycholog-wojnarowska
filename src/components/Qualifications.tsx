@@ -47,7 +47,7 @@ const Qualifications = () => {
             O mnie
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">
-            Ukończyłam psychologię na Uniwersytecie SWPS o{'\u00A0'}specjalności psychologia kliniczna dzieci i{'\u00A0'}młodzieży oraz edukację elementarną z{'\u00A0'}diagnozą i{'\u00A0'}terapią pedagogiczną. W{'\u00A0'}pracy łączę podejście psychologiczne, pedagogiczne i{'\u00A0'}terapeutyczne.
+            Jestem psychologiem, mediatorem i trenerem Treningu Umiejętności Społecznych (TUS). W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR), wspierając dzieci, młodzież i dorosłych w odkrywaniu swoich mocnych stron oraz wprowadzaniu zmian, które prowadzą do większego spokoju i satysfakcji w życiu.
           </p>
         </div>
 
