@@ -68,9 +68,13 @@ const Contact = () => {
 
               {/* Cennik Modal */}
               <div className="mt-auto pt-8 border-t border-muted">
-                <div className="space-y-2 mb-4 text-sm text-muted-foreground">
-                  <p>📍 Spotkania odbywają się w\u00A0gabinecie stacjonarnym oraz online.</p>
-                  <p>💳 Płatność gotówką, blik lub przelewem po sesji.</p>
+                <div className="space-y-3 mb-4">
+                  <div className="bg-background rounded-lg p-4">
+                    <p className="text-muted-foreground text-sm leading-relaxed">📍 Spotkania odbywają się w\u00A0gabinecie stacjonarnym oraz online.</p>
+                  </div>
+                  <div className="bg-background rounded-lg p-4">
+                    <p className="text-muted-foreground text-sm leading-relaxed">💳 Płatność gotówką, blik lub przelewem po sesji.</p>
+                  </div>
                 </div>
                 <Dialog>
                   <DialogTrigger asChild>
