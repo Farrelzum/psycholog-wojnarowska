@@ -59,7 +59,7 @@ const Testimonials = () => {
             <p className="text-sm font-medium text-foreground mb-4">
               Prywatność i dyskrecja
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-justify">
               Wszystkie opinie zostały udostępnione przez pacjentów. 
               Zasady poufności i dyskrecji są dla mnie świętością - Twoja prywatność 
               jest zawsze chroniona.
