@@ -26,8 +26,8 @@ const Qualifications = () => {
       <div className="max-w-6xl mx-auto">
         {/* Nagłówek sekcji */}
         <div className="text-center mb-16">
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">Jestem psychologiem, mediatorem i trenerem Treningu Umiejętności Społecznych (TUS).
-W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR), wspierając dzieci, młodzież i dorosłych w odkrywaniu swoich mocnych stron oraz wprowadzaniu zmian, które prowadzą do większego spokoju i satysfakcji w życiu.</p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">Jestem psychologiem, mediatorem i{'\u00A0'}trenerem Treningu Umiejętności Społecznych (TUS).
+W{'\u00A0'}pracy kieruję się empatią i{'\u00A0'}uważnością. Pracuję w{'\u00A0'}nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR), wspierając dzieci, młodzież i{'\u00A0'}dorosłych w{'\u00A0'}odkrywaniu swoich mocnych stron oraz wprowadzaniu zmian, które prowadzą do większego spokoju i{'\u00A0'}satysfakcji w{'\u00A0'}życiu.</p>
         </div>
 
         {/* Główna karta z złotą ramką */}
