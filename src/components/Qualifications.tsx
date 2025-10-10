@@ -135,7 +135,7 @@ const Qualifications = () => {
                       <h3 className="text-lg font-semibold text-primary mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed text-sm">
+                      <p className="text-muted-foreground leading-relaxed text-sm text-justify">
                         {item.description}
                       </p>
                     </div>
