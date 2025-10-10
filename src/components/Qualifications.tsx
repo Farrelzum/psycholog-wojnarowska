@@ -22,7 +22,7 @@ const specializations = [{
   description: "ADHD, zaburzenia adaptacyjne, opozycyjno-buntownicze"
 }];
 const Qualifications = () => {
-  return <section id="kwalifikacje" className="py-12 md:py-20 px-4 md:px-6 bg-background">
+  return <section id="kwalifikacje" className="pt-6 pb-12 md:pt-10 md:pb-20 px-4 md:px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Nagłówek sekcji */}
         <div className="text-center mb-16">
