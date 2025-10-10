@@ -26,9 +26,6 @@ const Qualifications = () => {
       <div className="max-w-6xl mx-auto">
         {/* Nagłówek sekcji */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
-            O mnie
-          </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">Jestem psychologiem, mediatorem i trenerem Treningu Umiejętności Społecznych (TUS).
 W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR), wspierając dzieci, młodzież i dorosłych w odkrywaniu swoich mocnych stron oraz wprowadzaniu zmian, które prowadzą do większego spokoju i satysfakcji w życiu.</p>
         </div>
