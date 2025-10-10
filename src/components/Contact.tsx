@@ -93,7 +93,7 @@ const Contact = () => {
                           <TableCell className="text-right text-sm">200 zł</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="font-medium text-sm">Sesja terapeutyczna indywidualna (TSR, ACT, psychodynamiczna)</TableCell>
+                          <TableCell className="font-medium text-sm">Sesja terapeutyczna indywidualna</TableCell>
                           <TableCell className="text-sm">50 min</TableCell>
                           <TableCell className="text-right text-sm">200 zł</TableCell>
                         </TableRow>
