@@ -32,7 +32,12 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4">
+                <a 
+                  href="https://www.google.com/maps?q=53.4289,14.5530" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 cursor-pointer"
+                >
                   <div className="w-10 h-10 bg-warm-accent rounded-full flex items-center justify-center">
                     <span className="text-white">📍</span>
                   </div>
@@ -43,7 +48,7 @@ const Contact = () => {
                       70-734 Szczecin
                     </p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-soft-beige rounded-full flex items-center justify-center">
@@ -94,24 +99,6 @@ const Contact = () => {
               <Button className="w-full mt-6 bg-warm shadow-soft hover:shadow-warm transition-all duration-300" asChild>
                 <a href="tel:+48790798993">Umów bezpłatną konsultację</a>
               </Button>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Embedded Google Map */}
-        <div className="mt-8">
-          <Card className="shadow-soft border-none bg-cream overflow-hidden">
-            <CardContent className="p-0">
-              <iframe
-                src="https://www.google.com/maps?q=Krzemienna+42B,70-734+Szczecin&output=embed"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Lokalizacja gabinetu - Krzemienna 42B, Szczecin"
-              />
             </CardContent>
           </Card>
         </div>
