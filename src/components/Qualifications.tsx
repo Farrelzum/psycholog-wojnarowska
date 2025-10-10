@@ -62,7 +62,7 @@ W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skonce
                 <div className="flex items-start gap-3">
                   <BookOpen className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
                   <p className="text-muted-foreground leading-relaxed">
-                    Należę do Polskiego Towarzystwa Terapii Skoncentrowanej na Rozwiązaniach, regularnie uczestniczę w{'\u00A0'}superwizjach i{'\u00A0'}szkoleniach rozwijających warsztat terapeutyczny. Obecnie poszerzam wiedzę z{'\u00A0'}zakresu integracji sensorycznej.
+                    Jestem członkiem Polskiego Towarzystwa Terapii Skoncentrowanej na Rozwiązaniach (PTTSR). W swojej pracy kieruję się Kodeksem Etycznym Terapeutów TSR.
                   </p>
                 </div>
               </div>
