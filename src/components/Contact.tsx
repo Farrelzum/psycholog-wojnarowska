@@ -70,7 +70,7 @@ const Contact = () => {
               <div className="mt-8 pt-8 border-t border-muted">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline" className="w-full">
+                    <Button className="w-full bg-warm shadow-soft hover:shadow-warm transition-all duration-300">
                       Zobacz cennik
                     </Button>
                   </DialogTrigger>
@@ -116,6 +116,11 @@ const Contact = () => {
                           <TableCell className="font-medium text-sm">Wydanie zaświadczenia</TableCell>
                           <TableCell className="text-sm">—</TableCell>
                           <TableCell className="text-right text-sm">50 zł</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium text-sm">Pakiet diagnostyczny ADHD</TableCell>
+                          <TableCell className="text-sm">3–4 spotkania</TableCell>
+                          <TableCell className="text-right text-sm">do 800 zł</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
