@@ -172,3 +172,9 @@ All colors MUST be HSL.
     background: var(--gradient-gold);
   }
 }
+
+/* Zmniejszenie widgetu ZnanyLekarz */
+#zl-url {
+  transform: scale(0.98);
+  transform-origin: center;
+}
