@@ -1,11 +1,8 @@
-import { GraduationCap, Award, Users, BookOpen, Target, Sparkles } from "lucide-react";
+import { GraduationCap, Users, BookOpen, Target, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 // Kluczowe informacje o wykształceniu
 const educationHighlights = ["Psychologia specjalność kliniczna dzieci i młodzieży - Uniwersytet SWPS w Poznaniu", "Pedagogika - edukacja elementarna z diagnozą i terapią pedagogiczną - Wyższa Szkoła Bankowa w Szczecinie", "Mediacje - studia podyplomowe - Wyższa Szkoła Bankowa w Szczecinie", "Studium Terapii i Podejścia Skoncentrowanego na Rozwiązaniach - kurs zaawansowany TSR", "Integracja sensoryczna - studia podyplomowe w trakcie - Collegium Balticum w Szczecinie"];
-
-// Kluczowe kwalifikacje zawodowe
-const qualificationsList = ["Trener Treningu Umiejętności Społecznych (TUS)", "Terapia Skoncentrowana na Rozwiązaniach - poziom podstawowy", "Terapia Skoncentrowana na Rozwiązaniach - poziom zaawansowany", "Członek Polskiego Towarzystwa TSR", "Szkolenie z integracji sensorycznej"];
 
 // Obszary specjalizacji
 const specializations = [{
@@ -40,46 +37,24 @@ W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skonce
           
           <Card className="relative border-2 border-gold shadow-warm bg-card">
             <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Wykształcenie */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                      <GraduationCap className="w-6 h-6 text-gold" />
-                    </div>
-                    <h3 className="text-2xl font-semibold text-warm-brown">
-                      Wykształcenie
-                    </h3>
+              {/* Wykształcenie */}
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
+                    <GraduationCap className="w-6 h-6 text-gold" />
                   </div>
-                  <ul className="space-y-3">
-                    {educationHighlights.map((item, index) => <li key={index} className="flex items-start gap-2">
-                        <span className="text-gold mt-1">•</span>
-                        <span className="text-muted-foreground leading-relaxed">
-                          {item}
-                        </span>
-                      </li>)}
-                  </ul>
+                  <h3 className="text-2xl font-semibold text-warm-brown">
+                    Wykształcenie
+                  </h3>
                 </div>
-
-                {/* Kwalifikacje */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                      <Award className="w-6 h-6 text-gold" />
-                    </div>
-                    <h3 className="text-2xl font-semibold text-warm-brown">
-                      Kwalifikacje
-                    </h3>
-                  </div>
-                  <ul className="space-y-3">
-                    {qualificationsList.map((item, index) => <li key={index} className="flex items-start gap-2">
-                        <span className="text-gold mt-1">•</span>
-                        <span className="text-muted-foreground leading-relaxed">
-                          {item}
-                        </span>
-                      </li>)}
-                  </ul>
-                </div>
+                <ul className="space-y-3">
+                  {educationHighlights.map((item, index) => <li key={index} className="flex items-start gap-2">
+                      <span className="text-gold mt-1">•</span>
+                      <span className="text-muted-foreground leading-relaxed">
+                        {item}
+                      </span>
+                    </li>)}
+                </ul>
               </div>
 
               {/* Dodatkowe informacje */}
