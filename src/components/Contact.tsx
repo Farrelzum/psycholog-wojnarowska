@@ -12,8 +12,8 @@ const Contact = () => {
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
-          <Card className="shadow-soft border-none bg-cream">
-            <CardContent className="p-8">
+          <Card className="shadow-soft border-none bg-cream h-full">
+            <CardContent className="p-8 flex flex-col h-full">
               <h3 className="text-2xl font-semibold text-primary mb-6">
                 Skontaktuj się ze mną
               </h3>
@@ -67,7 +67,7 @@ const Contact = () => {
               </div>
 
               {/* Cennik Modal */}
-              <div className="mt-8 pt-8 border-t border-muted">
+              <div className="mt-auto pt-8 border-t border-muted">
                 <div className="space-y-2 mb-4 text-sm text-muted-foreground">
                   <p>📍 Spotkania odbywają się w\u00A0gabinecie stacjonarnym oraz online.</p>
                   <p>💳 Płatność gotówką, blik lub przelewem po sesji.</p>
@@ -135,8 +135,8 @@ const Contact = () => {
           </Card>
 
           {/* Quick Contact */}
-          <Card className="shadow-soft border-none bg-cream">
-            <CardContent className="p-8">
+          <Card className="shadow-soft border-none bg-cream h-full">
+            <CardContent className="p-8 flex flex-col h-full">
               <h3 className="text-2xl font-semibold text-primary mb-6">
                 Pierwsze spotkanie
               </h3>
@@ -164,7 +164,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <Button className="w-full mt-6 bg-warm shadow-soft hover:shadow-warm transition-all duration-300" asChild>
+              <Button className="w-full mt-auto bg-warm shadow-soft hover:shadow-warm transition-all duration-300" asChild>
                 <a href="tel:+48790798993">Umów bezpłatną konsultację</a>
               </Button>
             </CardContent>
