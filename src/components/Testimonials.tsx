@@ -38,7 +38,7 @@ const Testimonials = () => {
             {/* Złota ramka gradientowa */}
             <div className="absolute -inset-1 gradient-gold rounded-2xl opacity-75 blur-sm"></div>
             
-            <div className="relative bg-white rounded-2xl p-8 shadow-warm border-2 border-gold">
+            <div className="relative bg-white rounded-2xl overflow-hidden shadow-warm border-2 border-gold">
               <a 
                 id="zl-url" 
                 className="zl-url block" 
