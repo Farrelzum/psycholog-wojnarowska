@@ -35,7 +35,11 @@ const Testimonials = () => {
 
         <div className="flex justify-center mb-12">
           <div className="relative max-w-4xl w-full">
-            <div className="relative bg-white/40 backdrop-blur-sm rounded-2xl overflow-hidden shadow-soft">
+            {/* Zewnętrzna złota poświata */}
+            <div className="absolute -inset-3 gradient-gold rounded-2xl opacity-60 blur-lg"></div>
+            <div className="absolute -inset-2 gradient-gold rounded-2xl opacity-80 blur-md"></div>
+            
+            <div className="relative rounded-2xl overflow-hidden">
               <a 
                 id="zl-url" 
                 className="zl-url block" 
