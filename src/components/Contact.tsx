@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 const Contact = () => {
   return <section className="py-12 md:py-20 px-4 md:px-6 bg-background">
       <div className="max-w-4xl mx-auto">
@@ -85,6 +85,9 @@ const Contact = () => {
                   <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
                     <DialogHeader>
                       <DialogTitle className="text-2xl font-semibold text-primary">Cennik</DialogTitle>
+                      <DialogDescription className="sr-only">
+                        Szczegółowy cennik usług psychologicznych
+                      </DialogDescription>
                     </DialogHeader>
                     <Table>
                       <TableHeader>
