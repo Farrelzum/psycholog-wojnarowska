@@ -1,8 +1,11 @@
-import { GraduationCap, Users, BookOpen, Target, Sparkles } from "lucide-react";
+import { GraduationCap, Briefcase, Users, BookOpen, Target, Sparkles } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 // Kluczowe informacje o wykształceniu
 const educationHighlights = ["Psychologia specjalność kliniczna dzieci i młodzieży - Uniwersytet SWPS w Poznaniu", "Pedagogika - edukacja elementarna z diagnozą i terapią pedagogiczną - Wyższa Szkoła Bankowa w Szczecinie", "Mediacje - studia podyplomowe - Wyższa Szkoła Bankowa w Szczecinie", "Studium Terapii i Podejścia Skoncentrowanego na Rozwiązaniach - kurs zaawansowany TSR", "Integracja sensoryczna - studia podyplomowe w trakcie - Collegium Balticum w Szczecinie"];
+
+// Doświadczenie zawodowe
+const experienceHighlights = ["Mam doświadczenie w pracy z dziećmi, młodzieżą i dorosłymi. Obecnie pracuję w Poradni Psychologiczno-Pedagogicznej oraz w gabinecie prywatnym, gdzie wspieram rozwój emocjonalny, społeczny i poznawczy moich klientów.", "Wcześniej zdobywałam doświadczenie w Ośrodku Szkolenia i Wychowania, udzielając wsparcia młodzieży zagrożonej wykluczeniem społecznym i towarzysząc jej w rozwoju emocjonalnym oraz społecznym.", "W pracy terapeutycznej łączę elementy Terapii Skoncentrowanej na Rozwiązaniach (TSR), Terapii Akceptacji i Zaangażowania (ACT) oraz podejścia psychodynamicznego, aby jak najlepiej odpowiadać na potrzeby każdej osoby."];
 
 // Obszary specjalizacji
 const specializations = [{
@@ -49,6 +52,26 @@ W pracy kieruję się empatią i uważnością. Pracuję w nurcie Terapii Skonce
                 </div>
                 <ul className="space-y-3">
                   {educationHighlights.map((item, index) => <li key={index} className="flex items-start gap-2">
+                      <span className="text-gold mt-1">•</span>
+                      <span className="text-muted-foreground leading-relaxed">
+                        {item}
+                      </span>
+                    </li>)}
+                </ul>
+              </div>
+
+              {/* Doświadczenie */}
+              <div className="mt-8 pt-8 border-t border-gold/20 space-y-4">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
+                    <Briefcase className="w-6 h-6 text-gold" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-warm-brown">
+                    Doświadczenie
+                  </h3>
+                </div>
+                <ul className="space-y-3">
+                  {experienceHighlights.map((item, index) => <li key={index} className="flex items-start gap-2">
                       <span className="text-gold mt-1">•</span>
                       <span className="text-muted-foreground leading-relaxed">
                         {item}
