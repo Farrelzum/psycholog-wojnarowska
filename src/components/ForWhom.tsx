@@ -59,10 +59,10 @@ const ForWhom = () => {
 
         <div className="mt-12 text-center">
           <div className="bg-soft-beige rounded-xl p-8 shadow-soft">
-            <p className="text-lg text-primary mb-4">
+            <p className="text-lg text-primary mb-4 text-justify">
               💡 <strong>Pamiętaj:</strong> nie musisz być w kryzysie, żeby skorzystać z terapii.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-justify">
               Czasem wystarczy, że chcesz mieć kogoś, kto wysłucha, zrozumie i pomoże spojrzeć 
               na życie z nowej perspektywy. To jest w porządku – i bardzo cenne.
             </p>
