@@ -102,18 +102,35 @@ const Contact = () => {
         <div className="mt-8">
           <Card className="shadow-soft border-none bg-cream overflow-hidden">
             <CardContent className="p-0">
-              <iframe
-                src="https://www.google.com/maps?q=Krzemienna+42B,+70-734+Szczecin,+Poland&output=embed"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Lokalizacja gabinetu - Krzemienna 42B, Szczecin"
-              />
+              <div className="relative">
+                <iframe
+                  src="https://www.google.com/maps?q=Krzemienna+42B,+70-734+Szczecin,+Poland&output=embed"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Lokalizacja gabinetu - Krzemienna 42B, Szczecin"
+                />
+              </div>
             </CardContent>
           </Card>
+          
+          <div className="mt-4 flex justify-center">
+            <Button 
+              className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300" 
+              asChild
+            >
+              <a 
+                href="https://www.google.com/maps/dir/?api=1&destination=Krzemienna+42B,+70-734+Szczecin,+Poland" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                📍 Wyznacz trasę do gabinetu
+              </a>
+            </Button>
+          </div>
         </div>
 
       </div>
