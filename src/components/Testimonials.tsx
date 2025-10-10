@@ -35,7 +35,7 @@ const Testimonials = () => {
 
         <div className="flex justify-center mb-12">
           <div className="relative max-w-4xl w-full">
-            <div className="relative overflow-hidden">
+            <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl">
               <a 
                 id="zl-url" 
                 className="zl-url block" 
