@@ -103,7 +103,7 @@ const Contact = () => {
           <Card className="shadow-soft border-none bg-cream overflow-hidden">
             <CardContent className="p-0">
               <iframe
-                src="https://www.google.com/maps?q=53.4289,14.5530&output=embed"
+                src="https://www.google.com/maps?q=Krzemienna+42B,+70-734+Szczecin,+Poland&output=embed"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
