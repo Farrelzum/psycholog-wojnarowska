@@ -2,7 +2,7 @@ import { GraduationCap, Award, Users, BookOpen, Target, Sparkles } from "lucide-
 import { Card, CardContent } from "@/components/ui/card";
 
 // Kluczowe informacje o wykształceniu
-const educationHighlights = ["Psychologia kliniczna dzieci i młodzieży - Uniwersytet SWPS", "Edukacja elementarna z diagnozą i terapią pedagogiczną", "Mediator sądowy", "Psychoterapeutka w trakcie szkolenia (TSR)"];
+const educationHighlights = ["Psychologia specjalność kliniczna dzieci i młodzieży - Uniwersytet SWPS w Poznaniu", "Pedagogika - edukacja elementarna z diagnozą i terapią pedagogiczną - Wyższa Szkoła Bankowa w Szczecinie", "Mediacje - studia podyplomowe - Wyższa Szkoła Bankowa w Szczecinie", "Studium Terapii i Podejścia Skoncentrowanego na Rozwiązaniach - kurs zaawansowany TSR", "Integracja sensoryczna - studia podyplomowe w trakcie - Collegium Balticum w Szczecinie"];
 
 // Kluczowe kwalifikacje zawodowe
 const qualificationsList = ["Trener Treningu Umiejętności Społecznych (TUS)", "Terapia Skoncentrowana na Rozwiązaniach - poziom podstawowy", "Terapia Skoncentrowana na Rozwiązaniach - poziom zaawansowany", "Członek Polskiego Towarzystwa TSR", "Szkolenie z integracji sensorycznej"];
