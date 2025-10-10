@@ -27,7 +27,7 @@ const ForWhom = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-12 md:py-20 px-4 md:px-6 bg-background">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
@@ -41,7 +41,7 @@ const ForWhom = () => {
 
         <div className="space-y-8">
           {situations.map((situation, index) => (
-            <div key={index} className="flex gap-6 p-6 bg-cream rounded-xl shadow-soft">
+            <div key={index} className="flex gap-4 md:gap-6 p-4 md:p-6 bg-cream rounded-xl shadow-soft">
               <div className="flex-shrink-0 w-8 h-8 bg-warm-accent rounded-full flex items-center justify-center mt-1">
                 <span className="text-sm font-semibold text-white">{index + 1}</span>
               </div>

@@ -39,7 +39,7 @@ const specializations = [
 
 const Qualifications = () => {
   return (
-    <section id="kwalifikacje" className="py-20 px-6 bg-background">
+    <section id="kwalifikacje" className="py-12 md:py-20 px-4 md:px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Nagłówek sekcji */}
         <div className="text-center mb-16">

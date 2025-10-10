@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 const Contact = () => {
-  return <section className="py-20 px-6 bg-background">
+  return <section className="py-12 md:py-20 px-4 md:px-6 bg-background">
       <div className="max-w-4xl mx-auto">
-      <div className="grid md:grid-cols-2 gap-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
+            Kontakt
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
           <Card className="shadow-soft border-none bg-cream">
             <CardContent className="p-8">

@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 const MyApproach = () => {
-  return <section className="py-20 px-6 bg-cream">
+  return <section className="py-12 md:py-20 px-4 md:px-6 bg-cream">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">Kim jestem?</h2>

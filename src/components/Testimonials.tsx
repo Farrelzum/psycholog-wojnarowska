@@ -22,7 +22,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-background to-soft-beige">
+    <section className="py-12 md:py-20 px-4 md:px-6 bg-gradient-to-b from-background to-soft-beige">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
