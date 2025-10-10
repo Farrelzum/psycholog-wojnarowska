@@ -35,13 +35,14 @@ const Testimonials = () => {
 
         <div className="flex justify-center mb-12">
           <div className="relative max-w-4xl w-full">
-            {/* Złota ramka gradientowa */}
-            <div className="absolute -inset-1 gradient-gold rounded-2xl opacity-75 blur-sm"></div>
+            {/* Zewnętrzna złota poświata/ramka */}
+            <div className="absolute -inset-3 gradient-gold rounded-2xl opacity-60 blur-lg"></div>
+            <div className="absolute -inset-2 gradient-gold rounded-2xl opacity-80 blur-md"></div>
             
-            <div className="relative bg-white rounded-2xl overflow-hidden shadow-warm border-2 border-gold">
+            <div className="relative rounded-2xl overflow-hidden">
               <a 
                 id="zl-url" 
-                className="zl-url block -m-px" 
+                className="zl-url block" 
                 href="https://www.znanylekarz.pl/barbara-wojnarowska/psycholog/szczecin"
                 rel="nofollow" 
                 data-zlw-doctor="barbara-wojnarowska" 

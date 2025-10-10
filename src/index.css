@@ -172,18 +172,3 @@ All colors MUST be HSL.
     background: var(--gradient-gold);
   }
 }
-
-/* Usunięcie wewnętrznych paddingów widgetu ZnanyLekarz */
-#zl-url > div,
-#zl-url > div > div,
-.zl-url > div,
-.zl-url > div > div {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Dopasowanie tła widgetu */
-#zl-url iframe {
-  display: block;
-  background: white;
-}
