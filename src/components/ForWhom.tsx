@@ -27,11 +27,11 @@ const ForWhom = () => {
   ];
 
   return (
-    <section className="py-12 md:py-20 px-4 md:px-6 bg-background">
+    <section className="py-12 md:py-20 px-4 md:px-6 bg-background" aria-labelledby="dla-kogo-heading">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
-            Dla kogo?
+          <h2 id="dla-kogo-heading" className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
+            Dla kogo jest terapia psychologiczna?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-justify">
             Każdy z nas ma momenty, w których potrzebuje wsparcia. Oto sytuacje, w których 

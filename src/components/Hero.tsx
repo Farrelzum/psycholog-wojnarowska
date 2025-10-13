@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import therapistPortrait from "@/assets/therapist-portrait.jpg";
 const Hero = () => {
-  return <section className="min-h-screen flex items-center justify-center px-4 md:px-6 py-8 md:py-12 gradient-subtle">
+  return <section className="min-h-screen flex items-center justify-center px-4 md:px-6 py-8 md:py-12 gradient-subtle" aria-label="Strona główna - Barbara Wojnarowska Psycholog">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Portrait */}
         <div className="order-2 md:order-1 flex justify-center">
           <div className="relative">
-            <img src={therapistPortrait} alt="Dr Anna Kowalska - Psychoterapeutka" className="w-64 h-80 md:w-80 md:h-96 object-cover rounded-2xl shadow-warm" />
+            <img src={therapistPortrait} alt="Barbara Wojnarowska - psycholog Szczecin i Stargard, specjalizacja terapia TSR dzieci młodzieży i dorosłych" className="w-64 h-80 md:w-80 md:h-96 object-cover rounded-2xl shadow-warm" />
             <div className="absolute -top-4 -right-4 w-16 h-16 bg-warm-accent rounded-full opacity-20"></div>
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-soft-beige rounded-full opacity-30"></div>
           </div>

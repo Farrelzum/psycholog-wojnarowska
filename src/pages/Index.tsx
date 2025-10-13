@@ -3,16 +3,18 @@ import Qualifications from "@/components/Qualifications";
 import ForWhom from "@/components/ForWhom";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
+import MyApproach from "@/components/MyApproach";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <main className="min-h-screen">
       <Hero />
+      <MyApproach />
       <Qualifications />
       <ForWhom />
       <Testimonials />
       <Contact />
-    </div>
+    </main>
   );
 };
 

@@ -3,11 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 const Contact = () => {
-  return <section className="py-12 md:py-20 px-4 md:px-6 bg-background">
+  return <section className="py-12 md:py-20 px-4 md:px-6 bg-background" aria-labelledby="kontakt-heading">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
-            Kontakt
+          <h2 id="kontakt-heading" className="text-3xl md:text-4xl font-light text-warm-brown mb-4">
+            Kontakt - psycholog Barbara Wojnarowska Szczecin
           </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">

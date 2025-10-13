@@ -22,10 +22,11 @@ const specializations = [{
   description: "ADHD, zaburzenia adaptacyjne, opozycyjno-buntownicze"
 }];
 const Qualifications = () => {
-  return <section id="kwalifikacje" className="pt-6 pb-12 md:pt-10 md:pb-20 px-4 md:px-6 bg-background">
+  return <section id="kwalifikacje" className="pt-6 pb-12 md:pt-10 md:pb-20 px-4 md:px-6 bg-background" aria-labelledby="kwalifikacje-heading">
       <div className="max-w-6xl mx-auto">
         {/* Nagłówek sekcji */}
         <div className="text-center mb-16">
+          <h2 id="kwalifikacje-heading" className="text-3xl md:text-4xl font-light text-warm-brown mb-4">Kwalifikacje i doświadczenie</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">Jestem psychologiem, mediatorem i{'\u00A0'}trenerem Treningu Umiejętności Społecznych (TUS).
 W{'\u00A0'}pracy kieruję się empatią i{'\u00A0'}uważnością. Pracuję w{'\u00A0'}nurcie Terapii Skoncentrowanej na Rozwiązaniach (TSR), wspierając dzieci, młodzież i{'\u00A0'}dorosłych w{'\u00A0'}odkrywaniu swoich mocnych stron oraz wprowadzaniu zmian, które prowadzą do większego spokoju i{'\u00A0'}satysfakcji w{'\u00A0'}życiu.</p>
         </div>
