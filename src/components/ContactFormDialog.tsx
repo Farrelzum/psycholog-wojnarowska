@@ -8,6 +8,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const contactSchema = z.object({
   email: z.string().trim().email({ message: "Nieprawidłowy adres email" }).max(255, { message: "Email za długi" }),
@@ -18,6 +19,7 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 
 export const ContactFormDialog = ({ children }: { children: React.ReactNode }) => {
   const [open, setOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
@@ -27,17 +29,36 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
     }
   });
 
-  const onSubmit = (data: ContactFormValues) => {
-    const whatsappMessage = `Email: ${data.email}%0AWiadomość: ${encodeURIComponent(data.message)}`;
-    window.open(`https://wa.me/48790798993?text=${whatsappMessage}`, '_blank');
+  const onSubmit = async (data: ContactFormValues) => {
+    setIsSubmitting(true);
     
-    toast({
-      title: "Przekierowanie do WhatsApp",
-      description: "Otwieramy WhatsApp z Twoją wiadomością"
-    });
-    
-    setOpen(false);
-    form.reset();
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          email: data.email,
+          message: data.message
+        }
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Wiadomość wysłana!",
+        description: "Dziękujemy za wiadomość. Odpowiemy najszybciej jak to możliwe."
+      });
+      
+      setOpen(false);
+      form.reset();
+    } catch (error) {
+      console.error("Błąd wysyłania wiadomości:", error);
+      toast({
+        title: "Błąd",
+        description: "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -49,7 +70,7 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
         <DialogHeader>
           <DialogTitle>Formularz kontaktowy</DialogTitle>
           <DialogDescription>
-            Wypełnij formularz, a następnie wyślemy Twoją wiadomość przez WhatsApp
+            Wypełnij formularz, a odpowiemy na Twojego maila
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -84,8 +105,8 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full">
-              Wyślij wiadomość
+            <Button type="submit" className="w-full" disabled={isSubmitting}>
+              {isSubmitting ? "Wysyłanie..." : "Wyślij wiadomość"}
             </Button>
           </form>
         </Form>
