@@ -73,7 +73,7 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[500px]">
+      <DialogContent className="sm:max-w-[450px] max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>Formularz kontaktowy</DialogTitle>
           <DialogDescription>
@@ -81,7 +81,7 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
             <FormField
               control={form.control}
               name="email"
@@ -117,7 +117,7 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
                   <FormControl>
                     <Textarea 
                       placeholder="Opisz, w czym mogę Ci pomóc..."
-                      className="min-h-[120px]"
+                      className="min-h-[100px]"
                       {...field}
                     />
                   </FormControl>
