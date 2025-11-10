@@ -174,7 +174,7 @@ const Contact = () => {
 
               <div className="flex flex-col sm:flex-row gap-3 mt-auto">
                 <Button className="flex-1 bg-warm shadow-soft hover:shadow-warm transition-all duration-300" asChild>
-                  <a href="tel:+48790798993">Umów bezpłatną konsultację</a>
+                  <a href="tel:+48790798993">Zadzwoń</a>
                 </Button>
                 <ContactFormDialog>
                   <Button variant="outline" className="flex-1 border-warm-brown text-warm-brown hover:bg-warm-accent/10">
