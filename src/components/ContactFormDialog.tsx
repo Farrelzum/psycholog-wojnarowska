@@ -44,7 +44,7 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
 
       toast({
         title: "Wiadomość wysłana!",
-        description: "Dziękujemy za wiadomość. Odpowiemy najszybciej jak to możliwe."
+        description: "Dziękuję za wiadomość. Odpowiem najszybciej jak to możliwe."
       });
       
       setOpen(false);
