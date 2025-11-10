@@ -136,8 +136,8 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
                       onCheckedChange={field.onChange}
                     />
                   </FormControl>
-                  <div className="space-y-1 leading-none">
-                    <FormLabel className="text-sm font-normal text-justify">
+                  <div className="space-y-1 leading-none text-justify">
+                    <FormLabel className="text-sm font-normal">
                       Wyrażam zgodę na przetwarzanie moich danych osobowych przez Barbarę Wojnarowską – psychologa, w celu realizacji kontaktu oraz umówienia wizyty, zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO). Zostałam/em poinformowana/y, że mam prawo do wglądu, poprawiania i usunięcia swoich danych.
                     </FormLabel>
                     <FormMessage />
