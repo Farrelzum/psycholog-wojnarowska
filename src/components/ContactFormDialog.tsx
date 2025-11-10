@@ -12,6 +12,7 @@ import { supabase } from "@/integrations/supabase/client";
 
 const contactSchema = z.object({
   email: z.string().trim().email({ message: "Nieprawidłowy adres email" }).max(255, { message: "Email za długi" }),
+  phone: z.string().trim().max(20, { message: "Numer telefonu może mieć maksymalnie 20 znaków" }).optional(),
   message: z.string().trim().min(1, { message: "Wiadomość nie może być pusta" }).max(1000, { message: "Wiadomość może mieć maksymalnie 1000 znaków" })
 });
 
@@ -25,6 +26,7 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
     resolver: zodResolver(contactSchema),
     defaultValues: {
       email: "",
+      phone: "",
       message: ""
     }
   });
@@ -36,6 +38,7 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
       const { error } = await supabase.functions.invoke('send-contact-email', {
         body: {
           email: data.email,
+          phone: data.phone,
           message: data.message
         }
       });
@@ -83,6 +86,19 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
                   <FormLabel>Email</FormLabel>
                   <FormControl>
                     <Input placeholder="twoj@email.pl" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Numer telefonu (opcjonalnie)</FormLabel>
+                  <FormControl>
+                    <Input placeholder="+48 123 456 789" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

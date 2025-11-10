@@ -10,6 +10,7 @@ const corsHeaders = {
 
 interface ContactRequest {
   email: string;
+  phone?: string;
   message: string;
 }
 
@@ -20,7 +21,7 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { email, message }: ContactRequest = await req.json();
+    const { email, phone, message }: ContactRequest = await req.json();
 
     console.log("Otrzymano wiadomość od:", email);
 
@@ -33,6 +34,10 @@ const handler = async (req: Request): Promise<Response> => {
       throw new Error("Email lub wiadomość są za długie");
     }
 
+    if (phone && phone.length > 20) {
+      throw new Error("Numer telefonu jest za długi");
+    }
+
     // Wysłanie e-maila na adres psychologa
     const emailResponse = await resend.emails.send({
       from: "Formularz kontaktowy <kontakt@psycholog-wojnarowska.pl>",
@@ -42,6 +47,7 @@ const handler = async (req: Request): Promise<Response> => {
       html: `
         <h2>Nowa wiadomość z formularza kontaktowego</h2>
         <p><strong>Od:</strong> ${email}</p>
+        ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
         <p><strong>Wiadomość:</strong></p>
         <p>${message.replace(/\n/g, '<br>')}</p>
         <hr>
