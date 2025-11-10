@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import therapistPortrait from "@/assets/therapist-portrait.jpg";
+import { ContactFormDialog } from "@/components/ContactFormDialog";
 const Hero = () => {
   return <section className="min-h-screen flex items-center justify-center px-4 md:px-6 py-8 md:py-12 gradient-subtle" aria-label="Strona główna - Barbara Wojnarowska Psycholog">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -26,9 +27,11 @@ const Hero = () => {
             <Button size="lg" className="bg-warm shadow-soft hover:shadow-warm transition-all duration-300 px-12" asChild>
               <a href="tel:+48790798993">Umów spotkanie</a>
             </Button>
-            <Button size="lg" variant="outline" className="border-warm-brown text-warm-brown hover:bg-warm-accent/10 px-12" asChild>
-              <a href="#kwalifikacje">Dowiedz się więcej</a>
-            </Button>
+            <ContactFormDialog>
+              <Button size="lg" variant="outline" className="border-warm-brown text-warm-brown hover:bg-warm-accent/10 px-12">
+                Wyślij wiadomość
+              </Button>
+            </ContactFormDialog>
           </div>
           
           <div className="mt-8 text-sm text-muted-foreground">
