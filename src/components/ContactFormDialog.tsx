@@ -7,15 +7,12 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
 const contactSchema = z.object({
   email: z.string().trim().email({ message: "Nieprawidłowy adres email" }).max(255, { message: "Email za długi" }),
   phone: z.string().trim().max(20, { message: "Numer telefonu może mieć maksymalnie 20 znaków" }).optional(),
-  preferredContact: z.enum(["email", "phone"], { required_error: "Wybierz preferowaną metodę kontaktu" }),
   message: z.string().trim().min(1, { message: "Wiadomość nie może być pusta" }).max(1000, { message: "Wiadomość może mieć maksymalnie 1000 znaków" })
 });
 
@@ -30,7 +27,6 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
     defaultValues: {
       email: "",
       phone: "",
-      preferredContact: "email",
       message: ""
     }
   });
@@ -43,7 +39,6 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
         body: {
           email: data.email,
           phone: data.phone,
-          preferredContact: data.preferredContact,
           message: data.message
         }
       });
@@ -104,32 +99,6 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
                   <FormLabel>Numer telefonu (opcjonalnie)</FormLabel>
                   <FormControl>
                     <Input placeholder="+48 123 456 789" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="preferredContact"
-              render={({ field }) => (
-                <FormItem className="space-y-3">
-                  <FormLabel>Preferowana metoda kontaktu</FormLabel>
-                  <FormControl>
-                    <RadioGroup
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                      className="flex flex-col space-y-1"
-                    >
-                      <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="email" id="email" />
-                        <Label htmlFor="email" className="font-normal cursor-pointer">Email</Label>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <RadioGroupItem value="phone" id="phone" />
-                        <Label htmlFor="phone" className="font-normal cursor-pointer">Telefon</Label>
-                      </div>
-                    </RadioGroup>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
