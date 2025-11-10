@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { ContactFormDialog } from "@/components/ContactFormDialog";
 const Contact = () => {
   return <section className="py-12 md:py-20 px-4 md:px-6 bg-background" aria-labelledby="kontakt-heading">
       <div className="max-w-4xl mx-auto">
@@ -171,9 +172,16 @@ const Contact = () => {
                 </div>
               </div>
 
-              <Button className="w-full mt-auto bg-warm shadow-soft hover:shadow-warm transition-all duration-300" asChild>
-                <a href="tel:+48790798993">Umów bezpłatną konsultację</a>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                <Button className="flex-1 bg-warm shadow-soft hover:shadow-warm transition-all duration-300" asChild>
+                  <a href="tel:+48790798993">Umów bezpłatną konsultację</a>
+                </Button>
+                <ContactFormDialog>
+                  <Button variant="outline" className="flex-1 border-warm-brown text-warm-brown hover:bg-warm-accent/10">
+                    Wyślij wiadomość
+                  </Button>
+                </ContactFormDialog>
+              </div>
             </CardContent>
           </Card>
         </div>
