@@ -12,6 +12,7 @@ interface ContactRequest {
   email: string;
   phone?: string;
   message: string;
+  gdprConsent: boolean;
 }
 
 const handler = async (req: Request): Promise<Response> => {
@@ -21,7 +22,7 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { email, phone, message }: ContactRequest = await req.json();
+    const { email, phone, message, gdprConsent }: ContactRequest = await req.json();
 
     console.log("Otrzymano wiadomość od:", email);
 
@@ -48,6 +49,7 @@ const handler = async (req: Request): Promise<Response> => {
         <h2>Nowa wiadomość z formularza kontaktowego</h2>
         <p><strong>Od:</strong> ${email}</p>
         ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
+        <p><strong>Zgoda RODO:</strong> ${gdprConsent ? 'TAK - potwierdzona' : 'NIE'}</p>
         <p><strong>Wiadomość:</strong></p>
         <p>${message.replace(/\n/g, '<br>')}</p>
         <hr>
