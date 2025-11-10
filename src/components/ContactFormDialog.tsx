@@ -70,7 +70,7 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
         <DialogHeader>
           <DialogTitle>Formularz kontaktowy</DialogTitle>
           <DialogDescription>
-            Wypełnij formularz, a odpowiemy na Twojego maila
+            Wypełnij formularz, a odpowiem na Twojego maila
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
