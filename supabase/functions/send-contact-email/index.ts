@@ -35,7 +35,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Wysłanie e-maila na adres psychologa
     const emailResponse = await resend.emails.send({
-      from: "Formularz kontaktowy <onboarding@resend.dev>",
+      from: "Formularz kontaktowy <kontakt@psycholog-wojnarowska.pl>",
       to: ["psycholog.wojnarowska@gmail.com"],
       replyTo: email,
       subject: `Nowa wiadomość od ${email}`,
