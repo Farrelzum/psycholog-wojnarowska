@@ -7,13 +7,15 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
 const contactSchema = z.object({
   email: z.string().trim().email({ message: "Nieprawidłowy adres email" }).max(255, { message: "Email za długi" }),
   phone: z.string().trim().max(20, { message: "Numer telefonu może mieć maksymalnie 20 znaków" }).optional(),
-  message: z.string().trim().min(1, { message: "Wiadomość nie może być pusta" }).max(1000, { message: "Wiadomość może mieć maksymalnie 1000 znaków" })
+  message: z.string().trim().min(1, { message: "Wiadomość nie może być pusta" }).max(1000, { message: "Wiadomość może mieć maksymalnie 1000 znaków" }),
+  gdprConsent: z.boolean().refine(val => val === true, { message: "Zgoda RODO jest wymagana" })
 });
 
 type ContactFormValues = z.infer<typeof contactSchema>;
@@ -27,7 +29,8 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
     defaultValues: {
       email: "",
       phone: "",
-      message: ""
+      message: "",
+      gdprConsent: false
     }
   });
 
@@ -118,6 +121,26 @@ export const ContactFormDialog = ({ children }: { children: React.ReactNode }) =
                     />
                   </FormControl>
                   <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="gdprConsent"
+              render={({ field }) => (
+                <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                  <FormControl>
+                    <Checkbox
+                      checked={field.value}
+                      onCheckedChange={field.onChange}
+                    />
+                  </FormControl>
+                  <div className="space-y-1 leading-none">
+                    <FormLabel className="text-sm font-normal">
+                      Wyrażam zgodę na przetwarzanie moich danych osobowych przez Barbarę Wojnarowską – psychologa, w celu realizacji kontaktu oraz umówienia wizyty, zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO). Zostałam/em poinformowana/y, że mam prawo do wglądu, poprawiania i usunięcia swoich danych.
+                    </FormLabel>
+                    <FormMessage />
+                  </div>
                 </FormItem>
               )}
             />
