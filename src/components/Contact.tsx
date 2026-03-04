@@ -46,8 +46,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-primary">Gabinet</p>
-                    <p className="text-muted-foreground">
-                      Krzemienna 42B<br />
+                    <p className="text-muted-foreground">Port Zdrowie
+ul. Citroena 8
+70-772 Szczecin
+I piętro, gabinet 117
+                    <br />
                       70-734 Szczecin
                     </p>
                   </div>
@@ -190,16 +193,13 @@ const Contact = () => {
         <div className="mt-8">
           <Card className="shadow-soft border-none bg-cream overflow-hidden">
             <CardContent className="p-0">
-              <iframe
-                src="https://www.google.com/maps?q=Krzemienna+42B,+70-734+Szczecin,+Poland&output=embed"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Lokalizacja gabinetu - Krzemienna 42B, Szczecin"
-              />
+              <iframe src="https://www.google.com/maps?q=Krzemienna+42B,+70-734+Szczecin,+Poland&output=embed" width="100%" height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Lokalizacja gabinetu - Krzemienna 42B, Szczecin" />
+            
             </CardContent>
           </Card>
         </div>
