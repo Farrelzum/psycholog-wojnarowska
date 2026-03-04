@@ -46,12 +46,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-primary">Gabinet</p>
-                    <p className="text-muted-foreground">Port Zdrowie
-ul. Citroena 8
-70-772 Szczecin
-I piętro, gabinet 117
-                    <br />
-                      70-734 Szczecin
+                    <p className="text-muted-foreground">
+                      Port Zdrowie<br />
+                      ul. Citroena 8<br />
+                      70-772 Szczecin<br />
+                      I piętro, gabinet 117
                     </p>
                   </div>
                 </div>
