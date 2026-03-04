@@ -194,10 +194,10 @@ I piętro, gabinet 117<br />
         <div className="mt-8">
           <Card className="shadow-soft border-none bg-cream overflow-hidden">
             <CardContent className="p-0">
-              <iframe src="https://www.google.com/maps?q=Krzemienna+42B,+70-734+Szczecin,+Poland&output=embed" width="100%" height="450" style={{ border: 0 }} allowFullScreen
+              <iframe src="https://www.google.com/maps?q=Port+Zdrowie,+ul.+Citroena+8,+70-772+Szczecin,+Poland&output=embed" width="100%" height="450" style={{ border: 0 }} allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Lokalizacja gabinetu - Krzemienna 42B, Szczecin" />
+              title="Lokalizacja gabinetu - Port Zdrowie, ul. Citroena 8, Szczecin" />
             
             </CardContent>
           </Card>
