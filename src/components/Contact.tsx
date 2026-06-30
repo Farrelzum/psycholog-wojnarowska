@@ -101,9 +101,9 @@ const Contact = () => {
                       </TableHeader>
                       <TableBody>
                         <TableRow>
-                          <TableCell className="font-medium text-sm">Konsultacja psychologiczna (dziecko, młodzież, dorosły)</TableCell>
+                          <TableCell className="font-medium text-sm">Konsultacja psychologiczna – pierwsza wizyta (dziecko, młodzież, dorośli)</TableCell>
                           <TableCell className="text-sm">50 min</TableCell>
-                          <TableCell className="text-right text-sm">200 zł</TableCell>
+                          <TableCell className="text-right text-sm">250 zł</TableCell>
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium text-sm">Sesja terapeutyczna indywidualna</TableCell>
@@ -111,29 +111,34 @@ const Contact = () => {
                           <TableCell className="text-right text-sm">200 zł</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="font-medium text-sm">Konsultacja rodzicielska / wychowawcza</TableCell>
+                          <TableCell className="font-medium text-sm">Konsultacja rodzicielska / wychowawcza – pierwsza wizyta</TableCell>
+                          <TableCell className="text-sm">50–60 min</TableCell>
+                          <TableCell className="text-right text-sm">250 zł</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium text-sm">Kolejna konsultacja rodzicielska / wychowawcza</TableCell>
                           <TableCell className="text-sm">50–60 min</TableCell>
                           <TableCell className="text-right text-sm">200 zł</TableCell>
                         </TableRow>
                         <TableRow>
-                          <TableCell className="font-medium text-sm">Terapia par / mediacja</TableCell>
+                          <TableCell className="font-medium text-sm">Terapia rodzinna</TableCell>
                           <TableCell className="text-sm">60 min</TableCell>
-                          <TableCell className="text-right text-sm">250 zł</TableCell>
+                          <TableCell className="text-right text-sm">300 zł</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium text-sm">Terapia par</TableCell>
+                          <TableCell className="text-sm">60 min</TableCell>
+                          <TableCell className="text-right text-sm">300 zł</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium text-sm">Mediacja</TableCell>
+                          <TableCell className="text-sm">60 min</TableCell>
+                          <TableCell className="text-right text-sm">300 zł</TableCell>
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium text-sm">Wydanie opinii psychologicznej (na życzenie klienta)</TableCell>
                           <TableCell className="text-sm">—</TableCell>
                           <TableCell className="text-right text-sm">od 250 zł</TableCell>
-                        </TableRow>
-                        <TableRow>
-                          <TableCell className="font-medium text-sm">Wydanie zaświadczenia</TableCell>
-                          <TableCell className="text-sm">—</TableCell>
-                          <TableCell className="text-right text-sm">50 zł</TableCell>
-                        </TableRow>
-                        <TableRow>
-                          <TableCell className="font-medium text-sm">Pakiet diagnostyczny ADHD</TableCell>
-                          <TableCell className="text-sm">3–4 spotkania</TableCell>
-                          <TableCell className="text-right text-sm">do 800 zł</TableCell>
                         </TableRow>
                       </TableBody>
                     </Table>
