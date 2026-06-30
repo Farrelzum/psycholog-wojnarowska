@@ -2,7 +2,7 @@ import { GraduationCap, Briefcase, Users, BookOpen, Target, Sparkles } from "luc
 import { Card, CardContent } from "@/components/ui/card";
 
 // Kluczowe informacje o wykształceniu
-const educationHighlights = ["Psychologia specjalność kliniczna dzieci i młodzieży - Uniwersytet SWPS w Poznaniu", "Pedagogika - edukacja elementarna z diagnozą i terapią pedagogiczną - Wyższa Szkoła Bankowa w Szczecinie", "Mediacje - studia podyplomowe - Wyższa Szkoła Bankowa w Szczecinie", "Studium Terapii i Podejścia Skoncentrowanego na Rozwiązaniach - kurs zaawansowany TSR", "Integracja sensoryczna - studia podyplomowe w trakcie - Collegium Balticum w Szczecinie"];
+const educationHighlights = ["Psychologia specjalność kliniczna dzieci i młodzieży - Uniwersytet SWPS w Poznaniu", "Pedagogika - edukacja elementarna z diagnozą i terapią pedagogiczną - Wyższa Szkoła Bankowa w Szczecinie", "Mediacje - studia podyplomowe - Wyższa Szkoła Bankowa w Szczecinie", "Studium Terapii i Podejścia Skoncentrowanego na Rozwiązaniach - kurs zaawansowany TSR", "Integracja sensoryczna - studia podyplomowe w Collegium Balticum w Szczecinie"];
 
 // Doświadczenie zawodowe
 const experienceHighlights = ["Mam doświadczenie w pracy z dziećmi, młodzieżą i dorosłymi. Obecnie pracuję w Poradni Psychologiczno-Pedagogicznej oraz w gabinecie prywatnym, gdzie wspieram rozwój emocjonalny, społeczny i poznawczy moich klientów.", "Wcześniej zdobywałam doświadczenie w Ośrodku Szkolenia i Wychowania, udzielając wsparcia młodzieży zagrożonej wykluczeniem społecznym.", "W pracy terapeutycznej łączę elementy Terapii Skoncentrowanej na Rozwiązaniach (TSR), Terapii Akceptacji i Zaangażowania (ACT) oraz podejścia psychodynamicznego, aby jak najlepiej odpowiadać na potrzeby każdej osoby."];
